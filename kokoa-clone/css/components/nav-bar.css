@@ -16,7 +16,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .nav__link {
+  color: #2e363e;
+}
+.nav__btn__span {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  right: 60px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.nav__btn__chat {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+  top: -15px;
+  right: 60px;
 }
