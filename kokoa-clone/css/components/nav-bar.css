@@ -21,23 +21,13 @@
 
 .nav__link {
 }
-.nav__btn__span {
-  background-color: tomato;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav__btn__more {
   position: absolute;
   top: -5px;
   right: 30px;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
 }
 
 .nav__btn__chat {
-  width: 24px;
-  height: 24px;
-  border-radius: 12px;
   position: absolute;
   top: -10px;
   right: 35px;
