@@ -18,6 +18,9 @@
 .alt-screen-header__column:nth-child(3) {
   justify-content: flex-end;
 }
+.alt-screen-header__column:nth-child(3) i {
+  margin-left: 25px;
+}
 .alt-screen-header__title {
   font-size: 26px;
 }
