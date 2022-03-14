@@ -1,3 +1,3 @@
-# ddin_yc
+# kokoa-clone
 
 공부
