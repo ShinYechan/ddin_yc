@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .chat-screen {
   height: 1000vh;
 }
@@ -7,9 +17,115 @@
   padding: 8px 12px;
   border-radius: 15px;
   font-size: 12px;
+  animation: fadeIn 1s ease-in-out;
 }
 .chat-main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+}
+.message-row {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 15px 0px;
+  animation: fadeIn 1s ease-in-out;
+}
+.receive {
+  justify-content: flex-start;
+}
+.send {
+  justify-content: flex-end;
+}
+.message-row img {
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.message-content__name {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+.message-content__receive {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  position: relative;
+}
+.message-content__receive__time {
+  position: absolute;
+  right: -35px;
+  bottom: 0px;
+  font-size: 12px;
+}
+.message-content__send {
+  background-color: var(--yellow);
+  padding: 10px;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  position: relative;
+}
+.message-content__send__time {
+  position: absolute;
+  left: -35px;
+  bottom: 0px;
+  font-size: 12px;
+}
+.reply {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 25px;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: var(--gray-border);
+  padding: 12px;
+  transition: all 0.5s ease-in-out;
+}
+.reply__column:last-child > i {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+.reply__column:last-child button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: var(--yellow);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 15px;
+}
+
+.reply:focus-within {
+  transform: translateY(60px);
+}
+.reply:focus-within input {
+  transform: translateY(-60px) translateX(-12%);
+  width: 95vw;
 }

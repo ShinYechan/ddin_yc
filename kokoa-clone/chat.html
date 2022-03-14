@@ -41,8 +41,39 @@
 
     <main class="alt-main-screen chat-main">
       <div class="chat-time">WednesDay, June 1, 2022</div>
+      <div class="message-row receive">
+        <img src="avatar2.png" />
+        <div class="message-content">
+          <div class="message-content__name">김현</div>
+          <div class="message-content__receive">
+            <span>병장 김현입니다. 무슨 일이신가요?</span>
+            <span class="message-content__receive__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row send">
+        <div class="message-content">
+          <div class="message-content__send">
+            <span>민간인 신예찬입니다. 오늘 전역했습니다.</span>
+            <span class="message-content__send__time">21:27</span>
+          </div>
+        </div>
+      </div>
     </main>
 
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-solid fa-square-plus fa-xl"></i>
+      </div>
+      <div class="reply__column">
+        <input placeholder="Write a message..." />
+        <i class="fa-solid fa-face-smile fa-xl"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">Your Screen in too big!</div>
     <script
       src="https://kit.fontawesome.com/20c125211f.js"
       crossorigin="anonymous"

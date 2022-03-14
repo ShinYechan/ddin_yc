@@ -1,3 +1,11 @@
+@keyframes header-icon_Rotate {
+  from {
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .screen-header {
   display: flex;
   justify-content: space-between;
@@ -17,6 +25,9 @@
 .screen-header__icon > span {
   margin-left: 25px;
   position: relative;
+}
+.screen-header__icon > span i:hover {
+  animation: header-icon_Rotate 1s linear infinite;
 }
 .icon-badge {
   top: -10px;
