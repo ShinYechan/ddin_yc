@@ -1,5 +1,6 @@
 #no-mobile {
-  background-color: var(--yellow);
+  background-color: var(--red);
+  color: white;
   position: absolute;
   width: 100vw;
   height: 100vh;

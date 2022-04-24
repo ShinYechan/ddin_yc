@@ -27,7 +27,12 @@
   width: 70px;
   height: 70px;
 }
+.more-suggestions__content__component div {
+  width: 70px;
+  height: 70px;
+}
 .more-suggestions__content__component span {
   color: var(--gray);
   font-size: 14px;
+  line-height: 18px;
 }

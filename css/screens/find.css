@@ -71,6 +71,7 @@
 }
 .open-chat__post__member__count {
   color: var(--gray);
+  margin-right: 5px;
 }
 .open-chat__post__member__status {
   color: tomato;

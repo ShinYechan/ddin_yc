@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .user-component__column:first-child {
   display: flex;
@@ -37,7 +38,7 @@
   font-weight: 400;
 }
 .user-component__subtitle {
-  margin-top: 8px;
+  margin-top: 10px;
   color: var(--gray);
 }
 .user-component__time {
