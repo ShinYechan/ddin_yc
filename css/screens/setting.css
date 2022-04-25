@@ -1,0 +1,26 @@
+.settings-setting {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--gray-border);
+  padding: 0px 10px;
+}
+.settings-setting:last-child {
+  border: none;
+}
+.settings-setting:hover {
+  background-color: var(--red);
+  color: white;
+}
+.setting-column:first-child {
+  display: flex;
+  font-size: 20px;
+}
+.setting-column:last-child {
+  font-size: 12px;
+}
+.setting-column i {
+  margin-right: 15px;
+  color: var(--gray);
+}

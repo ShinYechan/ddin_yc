@@ -41,6 +41,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.open-chat__post:last-child {
+  border: none;
+}
 .open-chat__post__column {
   position: relative;
 }

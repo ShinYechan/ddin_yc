@@ -2,20 +2,7 @@
   margin-top: 30px;
   border-bottom: var(--gray-border);
 }
-.more-icons__row {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 30px;
-}
-.more-icons__icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
-}
-.more-icons__icon span {
-  padding-top: 10px;
-}
+
 .more-suggestions__title {
   color: rgba(0, 0, 0, 0.8);
   font-size: 16px;
@@ -28,8 +15,12 @@
   height: 70px;
 }
 .more-suggestions__content__component div {
-  width: 70px;
   height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
 }
 .more-suggestions__content__component span {
   color: var(--gray);

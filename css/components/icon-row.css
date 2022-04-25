@@ -13,4 +13,9 @@
   display: block;
   margin-top: 18px;
   text-align: center;
+  color: var(--gray);
+}
+.find-icons {
+  height: 120px;
+  align-items: center;
 }
